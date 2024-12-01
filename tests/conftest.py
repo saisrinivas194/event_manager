@@ -12,6 +12,7 @@ Fixtures:
 - `initialize_database`: Prepares the database at the session start.
 - `setup_database`: Sets up and tears down the database before and after each test.
 """
+
 # Standard library imports
 from builtins import range
 from datetime import datetime
