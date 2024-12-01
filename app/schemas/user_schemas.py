@@ -22,6 +22,17 @@ def validate_url(url: Optional[str]) -> Optional[str]:
         raise ValueError('Invalid URL format')
     return url
 
+def validate_password(value):
+    """Validate password complexity requirements."""
+    # Ensure password meets complexity requirements
+    if not any(c.islower() for c in value):
+        raise ValueError("Password must contain at least one lowercase letter.")
+    if not any(c.isupper() for c in value):
+        raise ValueError("Password must contain at least one uppercase letter.")
+    if not any(c in "!@#$%^&*()_+-=[]{}|;':\",.<>?/`~" for c in value):
+        raise ValueError("Password must contain at least one special character.")
+    return value
+
 class UserBase(BaseModel):
     email: EmailStr = Field(..., example="john.doe@example.com")
     nickname: Optional[str] = Field(None, min_length=3, pattern=r'^[\w-]+$', example=generate_nickname())
@@ -39,7 +50,8 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     email: EmailStr = Field(..., example="john.doe@example.com")
-    password: str = Field(..., example="Secure*1234")
+    password: str = Field(...,min_length=8, example="Secure*1234")
+    _validate_password = validator('password', pre=True, allow_reuse=True)(validate_password)
 
 class UserUpdate(UserBase):
     email: Optional[EmailStr] = Field(None, example="john.doe@example.com")
