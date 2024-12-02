@@ -7,7 +7,6 @@ from app.utils.template_manager import TemplateManager
 from app.services.email_service import EmailService
 from app.services.jwt_service import decode_token
 from settings.config import Settings
-from fastapi import Depends
 from typing import AsyncGenerator
 
 def get_settings() -> Settings:
@@ -25,7 +24,7 @@ async def get_db() -> AsyncGenerator[AsyncSession, None]:
         try:
             yield session
         except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e))
+            raise HTTPException(status_code=500, detail=str(e)) from e
         
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
