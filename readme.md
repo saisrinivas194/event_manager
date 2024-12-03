@@ -11,7 +11,7 @@
 
 ---
 
-### 1. ![Missing Required Data in User Fixtures] (https://github.com/saisrinivas194/event_manager/issues/2)
+### 1. Missing Required Data in User Fixtures (https://github.com/saisrinivas194/event_manager/issues/2)
 
 **Issue:** The `conftest.py` fixtures lacked required fields, causing tests like `test_user_base_valid` to fail.
 
@@ -22,7 +22,7 @@
 
 ---
 
-### 2. ![Implemented User ID Validation Using UUID] (https://github.com/saisrinivas194/event_manager/issues/3)
+### 2. Implemented User ID Validation Using UUID (https://github.com/saisrinivas194/event_manager/issues/3)
 
 **Issue:** Tests failed because the `id` field in the UserResponse schema required a UUID format, but the fixture lacked it.
 
@@ -32,7 +32,7 @@
 
 ---
 
-### 3. ![Resolved Validation Error for Login Request] (https://github.com/saisrinivas194/event_manager/issues/5)
+### 3. Resolved Validation Error for Login Request (https://github.com/saisrinivas194/event_manager/issues/5)
 
 **Issue:** Tests for LoginRequest validation failed due to a missing `email` field in the fixture.
 
@@ -42,7 +42,7 @@
 
 ---
 
-### 4. ![Fixture Failed SMTP Connection] (https://github.com/saisrinivas194/event_manager/issues/7)
+### 4. Fixture Failed SMTP Connection (https://github.com/saisrinivas194/event_manager/issues/7)
 
 **Issue:** Email-related tests failed due to improper SMTP configuration.
 
@@ -52,7 +52,7 @@
 
 ---
 
-### 5. ![Implemented Email Validation] (https://github.com/saisrinivas194/event_manager/issues/9)
+### 5. Implemented Email Validation (https://github.com/saisrinivas194/event_manager/issues/9)
 
 **Issue:** Email fields lacked proper validation, allowing invalid formats to be accepted.
 
@@ -62,7 +62,7 @@
 
 ---
 
-### 6. ![Cleaned Up User-Related Files] (https://github.com/saisrinivas194/event_manager/issues/11)
+### 6. Cleaned Up User-Related Files (https://github.com/saisrinivas194/event_manager/issues/11)
 
 **Issue:** User-related files contained unused variables, duplicate imports, and redundant fields.
 
@@ -74,7 +74,7 @@
 
 ---
 
-### 7. ![Build and Publish Image to DockerHub] (https://github.com/saisrinivas194/event_manager/issues/13)
+### 7. Build and Publish Image to DockerHub (https://github.com/saisrinivas194/event_manager/issues/13)
 
 **Issue:** The CI/CD pipeline needed updates to publish the Docker image to DockerHub.
 
