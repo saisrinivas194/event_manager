@@ -90,12 +90,12 @@
 # Test Coverage and Docker Profile
 
 ### Test Coverage Report
-![Test Coverage](<img width="1202" alt="Screenshot 2024-12-02 at 10 23 44 PM" src="https://github.com/user-attachments/assets/a16288ac-8934-4692-845c-bfcaa1698948">
+![image](<img width="1202" alt="Screenshot 2024-12-02 at 10 23 44 PM" src="https://github.com/user-attachments/assets/a16288ac-8934-4692-845c-bfcaa1698948">
 )
 *Detailed test coverage report showing module-wise coverage metrics and overall coverage percentage*
 
 ### Docker Profile
-![Docker Profile](Screenshot%202024-12-02%20at%2010.26.11%20PM.png)
+![image](Screenshot%202024-12-02%20at%2010.26.11%20PM.png)
 *Docker profile showing container configurations and resource usage*
 
 ## Key Learnings
