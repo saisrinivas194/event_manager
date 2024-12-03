@@ -90,7 +90,7 @@
 # Test Coverage and Docker Profile
 
 ### Test Coverage Report
-![Test Coverage](Screenshot%202024-12-02%20at%2010.23.44%20PM.png)
+![Test Coverage](Screenshot 2024-12-02 at 10.23.44 PM.png)
 *Detailed test coverage report showing module-wise coverage metrics and overall coverage percentage*
 
 ### Docker Profile
