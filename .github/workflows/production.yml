@@ -83,7 +83,7 @@ jobs:
           cache-to: type=registry,ref=saisrinivas194/event_management:cache,mode=max
           
       - name: Scan the Docker image
-        uses: aquasecurity/trivy-action@v0.11.0
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'saisrinivas194/event_management:${{ github.sha }}'
           format: 'table'
