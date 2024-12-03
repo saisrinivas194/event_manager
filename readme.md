@@ -94,6 +94,8 @@
 *Detailed test coverage report showing module-wise coverage metrics and overall coverage percentage*
 
 ### Docker Profile
+You can find the Docker image for the Event Management project on Docker Hub:  
+[Event Management Docker Image](https://hub.docker.com/repository/docker/saisrinivas194/event_management/general)
 ![image](https://github.com/saisrinivas194/event_manager/blob/13-build-and-publish-image-to-dockerhub/Screenshot%202024-12-02%20at%2010.26.11%E2%80%AFPM.png)
 *Docker profile showing container configurations and resource usage*
 
