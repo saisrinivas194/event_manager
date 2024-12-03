@@ -90,11 +90,11 @@
 # Test Coverage and Docker Profile
 
 ### Test Coverage Report
-![Test Coverage](Screenshot%202024-12-02%20at%2010.23.44%20PM.png)
+![image](https://github.com/saisrinivas194/event_manager/blob/13-build-and-publish-image-to-dockerhub/Screenshot%202024-12-02%20at%2010.23.44%E2%80%AFPM.png)
 *Detailed test coverage report showing module-wise coverage metrics and overall coverage percentage*
 
 ### Docker Profile
-![Docker Profile](Screenshot%202024-12-02%20at%2010.26.11%20PM.png)
+![image](Screenshot%202024-12-02%20at%2010.26.11%20PM.png)
 *Docker profile showing container configurations and resource usage*
 
 ## Key Learnings
