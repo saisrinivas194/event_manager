@@ -101,6 +101,22 @@ You can find the Docker image for the Event Management project on Docker Hub:
 
 ## Key Learnings
 
-- **Testing Discipline:** Regularly running tests after each change helped in identifying and resolving issues early in the development process.
-- **Code Quality Tools:** Using linters and automated checks ensured adherence to best practices and enhanced overall code quality.
-- **Thorough Documentation:** Regularly referencing project requirements and documentation clarified expectations and guided development effectively.
+- **Testing Discipline:** Regular testing after every change helped identify and resolve issues early, ensuring a stable and reliable codebase. Expanding test coverage improved robustness across edge cases.
+
+- **Code Quality Tools:** Using linters and automated checks maintained adherence to best practices, enhancing overall code quality and reducing technical debt.
+
+- **Dependency Management:** Regular audits and updates of dependencies, such as Gunicorn, ensured security, compatibility, and stability of the application.
+
+- **Version Control and Collaboration:** Leveraging GitHub for version control streamlined team collaboration, enabling efficient code reviews and tracking of changes through clear commit messages.
+
+- **CI/CD Pipeline Resilience:** Automating tests and Docker image builds in the CI/CD pipeline ensured only high-quality code was deployed, reducing deployment failures and downtime.
+
+- **Environment-Specific Configurations:** Properly managing test, development, and production environment settings avoided conflicts and ensured consistent application behavior across stages.
+
+- **Regex and Validation Expertise:** Implementing regex-based validations strengthened data integrity and application security by preventing invalid or malicious input.
+
+- **Error Logging and Monitoring:** Improved error logging mechanisms provided valuable insights for debugging and maintaining seamless user experiences in production.
+
+- **Scalability Preparation:** Optimizing Docker images and designing user management enhancements with scalability in mind laid a solid foundation for handling future growth.
+
+- **Documentation and Knowledge Sharing:** Comprehensive documentation of fixes, processes, and enhancements facilitated knowledge transfer, aiding team onboarding and collaboration.
