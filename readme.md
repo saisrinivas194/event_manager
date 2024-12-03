@@ -87,7 +87,15 @@
 - Enhanced test fixture files to align with updated requirements and improve accuracy.
 
 ---
+# Test Coverage and Docker Profile
 
+### Test Coverage Report
+![Test Coverage](Screenshot%202024-12-02%20at%2010.23.44%20PM.png)
+*Detailed test coverage report showing module-wise coverage metrics and overall coverage percentage*
+
+### Docker Profile
+![Docker Profile](Screenshot%202024-12-02%20at%2010.26.11%20PM.png)
+*Docker profile showing container configurations and resource usage*
 
 ## Key Learnings
 
