@@ -16,7 +16,7 @@ Fixtures:
 # Standard library imports
 from builtins import range
 from datetime import datetime
-from unittest.mock import patch
+from unittest.mock import patch, Mock, AsyncMock
 from uuid import uuid4
 
 # Third-party imports
@@ -47,11 +47,27 @@ AsyncSessionScoped = scoped_session(AsyncTestingSessionLocal)
 
 
 @pytest.fixture
-def email_service():
-    # Assuming the TemplateManager does not need any arguments for initialization
-    template_manager = TemplateManager()
-    email_service = EmailService(template_manager=template_manager)
-    return email_service
+def mock_smtp_client():
+    """Create a mock SMTP client for testing."""
+    mock_client = Mock()
+    mock_client.send_email = Mock()  # Make this a regular Mock since it's not async
+    mock_client.connect = Mock()
+    mock_client.disconnect = Mock()
+    return mock_client
+
+@pytest.fixture
+def mock_template_manager():
+    """Create a mock template manager for testing."""
+    mock_manager = Mock()
+    mock_manager.render_template = Mock(return_value="Mocked template content")
+    return mock_manager
+
+@pytest.fixture
+def email_service(mock_smtp_client, mock_template_manager):
+    """Create an email service with mocked dependencies for testing."""
+    service = EmailService(template_manager=mock_template_manager)
+    service.smtp_client = mock_smtp_client  # Replace the real SMTP client with our mock
+    return service
 
 
 # this is what creates the http client for your api tests

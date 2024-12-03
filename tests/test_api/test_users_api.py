@@ -16,9 +16,18 @@ async def test_create_user_access_denied(async_client, user_token, email_service
         "nickname": generate_nickname(),
         "email": "test@example.com",
         "password": "sS#fdasrongPassword123!",
+        "first_name": "John",
+        "last_name": "Doe",
+        "bio": None,
+        "profile_picture_url": None,
+        "github_profile_url": None,
+        "linkedin_profile_url": None
     }
     # Send a POST request to create a user
     response = await async_client.post("/users/", json=user_data, headers=headers)
+    # Print response for debugging
+    print(f"Response status: {response.status_code}")
+    print(f"Response body: {response.json()}")
     # Asserts
     assert response.status_code == 403
 
