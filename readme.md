@@ -11,7 +11,7 @@
 
 ---
 
-### 1. Missing Required Data in User Fixtures
+### 1. ![Missing Required Data in User Fixtures] (https://github.com/saisrinivas194/event_manager/issues/2)
 
 **Issue:** The `conftest.py` fixtures lacked required fields, causing tests like `test_user_base_valid` to fail.
 
